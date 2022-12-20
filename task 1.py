@@ -30,7 +30,7 @@ stitcher = cv2.Stitcher.create()       #ransac algorithm, image warping are used
 # Stitch the images together
 status, stitched_img = stitcher.stitch(img_list)
 
-# Check if the stitching was successful or not by loops
+# Check if the stitching was successfull
 if status == cv2.Stitcher_OK:
     print('Your stitched image is ready, please have a look')
     cv2.imwrite("stitched_image.jpg", stitched_img)  #this will save the stitched image 
